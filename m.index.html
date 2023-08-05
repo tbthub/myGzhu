@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广大官网</title>
+    <link rel="stylesheet" href="m.index.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="swiper.css">
+</head>
+<body>
+<div class="top">
+    <div class="pop">三</div>
+    <a class="lang">EN</a>
+</div>
+<div class="nav">
+    <div class="topNav">
+        <ul class="navHead">
+            <!--            <li class="home">首页</li>-->
+            <!--            <li>-->
+            <!--                <div class="mainNav">学校概况 <span class="popSubNav">+</span></div>-->
+            <!--                <ul class="origin">-->
+            <!--                    <li class="subNav"><a href="#">学校简介</a></li>-->
+            <!--                    <li class="subNav"><a href="#">学校简介</a></li>-->
+            <!--                    <li class="subNav"><a href="#">学校简介</a></li>-->
+            <!--                    <li class="subNav"><a href="#">学校简介</a></li>-->
+            <!--                    <li class="subNav"><a href="#">学校简介</a></li>-->
+            <!--                </ul>-->
+            <!--            </li>-->
+        </ul>
+    </div>
+
+    <ul class="bottomNav">
+        <li><span>数字广大</span></li>
+        <li><span>个人邮箱</span></li>
+        <li><span>图书馆</span></li>
+        <li><span>招标信息</span></li>
+        <li><span>热门站点</span></li>
+        <li><span>校友之窗</span></li>
+        <li><span>领导信箱</span></li>
+    </ul>
+</div>
+<div class="slideShow">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="imags/onload/pic1.png" alt=""></div>
+            <div class="swiper-slide"><img src="imags/onload/pic2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imags/onload/pic3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imags/onload/pic4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="imags/onload/pic5.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script src="swiper/swiper-bundle.min.js"></script>
+<script src="m.index.js"></script>
+<script src="swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    let swiper = new Swiper(".mySwiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+li {
+    list-style: none;
+}
+
+.banner {
+    position: relative;
+    margin: 0 auto;
+    width: 1300px;
+    height: 610px;
+}
+
+.nav {
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 40px;
+    width: 1000px;
+    height: 200px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.new {
+    padding-right: 20px;
+    border-right: 2px solid #fff;
+}
+
+.lan {
+    margin: 0 20px;
+}
+
+.lan::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url(imags/icons/en.png);
+    background-size: 100% 100%;
+}
+.navTopLink {
+    display: inline-block;
+}
+.fa-search{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.fa-search img {
+    width: 100%;
+}
+.searchBox{
+    display: none;
+    float: right;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+.searchBox input {
+    opacity: 50%;
+    float: right;
+    display: inline-block;
+    padding-left: 20px;
+    width: 200px;
+    height: 35px;
+    border-radius: 17px;
+    transition: width 0.3s linear;
+}
+.searchBox a {
+    position: absolute;
+    top: 8px;
+    right: 17px;
+}
+    /*.IChange {*/
+/*    display: inline-block;*/
+/*    width: 120px;*/
+/*    height: 30px;*/
+/*}*/
+.nav ul {
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.nav ul li {
+    float: left;
+    position: relative;
+    height: 50px;
+    margin: 0 15px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.sub-navBox {
+    display: none;
+    position: absolute;
+    width: 203px;
+    top: 46px;
+    right: -50px;
+    background-color: rgba(255, 255, 255, .8);
+    border-top: 2px solid green;
+}
+
+.drop-downBox {
+    margin: 8px auto;
+    width: 80%;
+    height: 40px;
+    border-bottom: 1px solid #333;
+    color: black;
+    text-align: center;
+}
+
+.right {
+    margin-top: -100px;
+    position: sticky;
+    float: right;
+    width: 110px;
+    top: 45%;
+    color: #ffffff;
+}
+
+.right li {
+    position: relative;
+    height: 40px;
+    margin: 5px 0;
+    background-color: rgb(103, 147, 111);
+    text-align: center;
+    line-height: 40px;
+}
+
+/*.right li::before {*/
+/*   content: '';*/
+/*    display: inline-block;*/
+/*    width: 29px;*/
+/*    height: 27px;*/
+/*    background-image: url('imags/icons/s1.png');*/
+/*    background-size: 100% 100%;*/
+/*}*/
+
+.right li:hover {
+    margin-left: -30px;
+    width: 150px;
+    background-color: rgba(246, 188, 91);
+    transition: margin-left 0.3s linear;
+}
+
+/*.right li span {*/
+/*    display: inline-block;*/
+/*    width: 20px;*/
+/*    height: 17px;*/
+/*    background: url('imags/icons/s1.png') no-repeat;*/
+/*    background-size: 100%;*/
+/*}*/
+.right li::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 19px;
+    height: 18px;
+    top: 11px;
+    left: 6px;
+    background-size: 100% 100%;
+}
+.right li:nth-child(1)::before
+{
+    background-image: url("imags/icons/s1.png");
+}
+.right li:nth-child(2)::before
+{
+    background-image: url("imags/icons/s2.png");
+}
+.right li:nth-child(3)::before
+{
+    background-image: url("imags/icons/s3.png");
+}
+.right li:nth-child(4)::before
+{
+    background-image: url("imags/icons/s4.png");
+}
+.right li:nth-child(5)::before
+{
+    background-image: url("imags/icons/s5.png");
+}
+.right li:nth-child(6)::before
+{
+    background-image: url("imags/icons/s6.png");
+}
+.right li:nth-child(7)::before
+{
+    background-image: url("imags/icons/s7.png");
+}
+#ad {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 510px;
+    height: 270px;
+    transition: left 10ms linear;
+    z-index: 1;
+}
+.close {
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 32px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+#ad img {
+    width: 100%;
+}
