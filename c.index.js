@@ -1,4 +1,3 @@
-
 //导航栏渲染
 const navUl = document.querySelector('#navUl')
 
@@ -122,10 +121,10 @@ const close = document.querySelector('.close')
 
 //广告删除============================
 function myClose() {
-    let arr = ['您真的要删除我吗?', '您真的确认要删除我了吗?', '能不能不要删除我?', '您真的确定吗?', '您是否要反悔吗?', '不要再往下面点了!', '欸,罢了罢了!']
+    let arr = ['您真的要删除我吗?', '您真的确认要删除我了吗?', '能不能不要删除我?', '您真的确定吗?', '您是否要反悔吗?', '不要再往下面点了!', '']
     let dele = false
     for (let i = 0; i < arr.length; i++) {
-        if (i !== 2 && i !== 4 && i !== 5 && !confirm(arr[i])) {
+        if (i !== 2 && i !== 4 && i !== 5 && i !== 6 && !confirm(arr[i])) {
             break
         } else if (i === 2 && confirm(arr[2])) {
             break
